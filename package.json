@@ -1,0 +1,18 @@
+{
+  "name": "ethers-simple-storage-fcc",
+  "author": "Marco Gianelli",
+  "email": "marco.gianelli.95@gmail.com",
+  "license": "MIT",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "ethers": "^5.6.9",
+    "prettier": "^2.7.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.19",
+    "solc": "0.8.7-fixed"
+  },
+  "scripts": {
+    "compile": "yarn solcjs --bin --abi --include-path node_modules/ --base-path . -o . SimpleStorage.sol"
+  }
+}
